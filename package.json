@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "postinstall": "husky install",
-    "pretty-quick": "pretty-quick",
+    "pretty-quick": "pretty-quick --verbose",
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
