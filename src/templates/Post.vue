@@ -5,7 +5,7 @@
 
       <article class="max-w-xl md:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-12 pt-16" :class="{'border-b border-grey-lighter pb-10 mb-16': !$page.post.author}">
 
-        <alert v-if="postIsOlderThanOneYear" class="bg-orange-100 border-l-4 border-orange-500 text-orange-900">
+        <alert v-if="postIsOlderThanOneYear" class="bg-warning-100 border-l-4 border-warning-500 text-warning-900">
           This post is over a year old, some of this information may be out of date.
         </alert>
 
@@ -29,7 +29,7 @@
                 <g-link :to="`${$page.post.author.path}/`" class="text-black hover:text-gray-600 capitalize border-b-2 border-transparent transition-colors duration-300">{{ titleCase($page.post.author.title) }}</g-link>
               </h4>
               <p class="leading-normal">
-                <g-link :to="`${$page.post.author.path}/`" class="text-blue-500 hover:text-blue-400 transition-colors duration-300">See all posts by {{ titleCase($page.post.author.title) }} &rarr;</g-link>
+                <g-link :to="`${$page.post.author.path}/`" class="text-accent-500 hover:text-accent-400 transition-colors duration-300">See all posts by {{ titleCase($page.post.author.title) }} &rarr;</g-link>
               </p>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default {
     },
     postIsOlderThanOneYear () {
       let postDate = moment(this.$page.post.datetime)
-      return moment().diff(postDate, 'years') > 0 ? true : false
+      return moment().diff(postDate, 'years') > 0
     },
     postUrl () {
       let siteUrl = this.config.siteUrl

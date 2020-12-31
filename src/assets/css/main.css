@@ -2,10 +2,10 @@
 @import 'tailwindcss/base';
 /*! purgecss end ignore */
 
-@import 'components/resets';
+@import 'components/resets.css';
 
 @import 'tailwindcss/components';
 
-@import 'components/markdown';
+@import 'components/markdown.scss';
 
 @import 'tailwindcss/utilities';

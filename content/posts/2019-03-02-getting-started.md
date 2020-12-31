@@ -38,7 +38,7 @@ Alternatively, you can clone or download the [repo on GitHub](https://github.com
 - Option for fullscreen covers
 - Medium-like image lightbox
 - Taxonomies: Tags and Authors
-- Aproximate read time for posts
+- Approximate read time for posts
 - Post excerpts: automatic or user-defined
 - **Paginated** [blog](/2/), [tag](https://gridsome-starter-bleda.netlify.com/tag/dummy/), and [author](/author/gridsome/) archives
 - Easily show post dates in your locale (moment.js)
@@ -108,7 +108,7 @@ Update the feed title and all the default URLs, in `gridsome.config.js`:
 
 Posts that are over one year old will show a warning like this one:
 
-<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-900 leading-normal p-4 md:mx-6 mb-6" role="alert">
+<div class="bg-warning-100 border-l-4 border-warning-500 text-warning-900 leading-normal p-4 md:mx-6 mb-6" role="alert">
     This post is over a year old, some of this information may be out of date.
 </div>
 
@@ -117,13 +117,13 @@ This is a flexible alert component, defined in `/src/components/Alert.vue` and p
 ```vue
 <template>
     ...
-    <alert v-if="postIsOlderThanOneYear" color="orange">This post is over a year old, some of this information may be out of date.</alert>
+    <alert v-if="postIsOlderThanOneYear" color="warning">This post is over a year old, some of this information may be out of date.</alert>
     ...
 </template>
 ```
 The `postIsOlderThanOneYear` computed property uses `moment.js`, so you can customise it to any date you need.
 
-The `color` prop can be any color name from your `tailwind.js` config. If you omit it, the alert will use <span class="inline-block bg-blue-lightest border-l-4 border-blue text-blue-darker px-2 py-px stext-sm">blue</span> as a fallback.
+The `color` prop can be any color name from your `tailwind.js` config. If you omit it, the alert will use <span class="inline-block bg-accent-lightest border-l-4 border-accent text-accent-darker px-2 py-px stext-sm">blue</span> as a fallback.
 
 #### Post dates in your language
 
