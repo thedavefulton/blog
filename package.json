@@ -2,7 +2,6 @@
   "name": "blog",
   "private": true,
   "scripts": {
-    "postinstall": "husky install",
     "pretty-quick": "pretty-quick",
     "build": "gridsome build",
     "develop": "gridsome develop",
