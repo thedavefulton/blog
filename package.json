@@ -3,11 +3,16 @@
   "private": true,
   "scripts": {
     "postinstall": "husky install",
-    "pretty-quick": "pretty-quick --verbose",
+    "pretty-quick": "pretty-quick",
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "newpost": "node scripts/newPost.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged --verbose"
+    }
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.1",
