@@ -201,6 +201,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Merriweather Sans',
         'Fira Sans',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -215,7 +216,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['Cardo', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['Merriweather', 'Cardo', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'SFMono-Regular',
         'Menlo',

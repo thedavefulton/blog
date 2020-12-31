@@ -1,3 +1,5 @@
+require('typeface-merriweather')
+require('typeface-merriweather-sans')
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { head }) {
